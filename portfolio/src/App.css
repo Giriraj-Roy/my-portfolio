@@ -1,3 +1,112 @@
-.nav{
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffcccc, #ffdde1, #ffe8cc);
+}
+.parent-div{
+  margin: 0;
+  padding: 0;
+}
+.nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  /* background: linear-gradient(135deg, #3498db, #9b59b6); */
+  /* background: linear-gradient(135deg, #fdcbf1, #e6c9f8, #c9c6ff); */
+  background-color: #f1c40f;
+  padding: 1rem 0;
+  box-shadow: 15px 14px 18px rgba(248, 236, 14, 0.9);
+
+}
+.nav div {
+  margin: 0 1rem;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.nav div:hover {
+  transform: scale(1.1);
+}
+
+.nav div:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
+/* Styling for the main container */
+.head {
+  text-align: center;
+  /* background: linear-gradient(135deg, #3498db, #9b59b6); */
+  /* background: linear-gradient(135deg, #fdcbf1, #e6c9f8, #c9c6ff); */
+  background: linear-gradient(135deg, #ffcccc, #ffdde1, #ffe8cc);
+  padding: 50px;
+  color: black;
+}
+
+/* Styling for the title */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for the subheading */
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for the links */
+.links{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.links a {
+  margin: 0.5rem;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.links a:hover {
+  color: #f1c40f;
+}
+
+/* Styling for the Explore button */
+.explore-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f1c40f;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Explore button */
+.explore-btn:hover {
+  background-color: #f39c12;
+}
+
+.resume-cta {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: inherit;
+  border: 2px solid #f1c40f;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Explore button */
+.resume-cta:hover {
+  color: #FFFFFF;
+  background-color: #f39c12;
 }

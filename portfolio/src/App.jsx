@@ -12,7 +12,7 @@ import Experience from './components/Experience'
 function App() {
 
   return (
-    <>
+    <div className='parent-div'>
       <Navbar/>
       <Home/>
       <About/>
@@ -21,7 +21,7 @@ function App() {
       <Skills/>
       <Footer/>
 
-    </>
+    </div>
   )
 }
 

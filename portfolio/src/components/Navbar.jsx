@@ -3,7 +3,6 @@ import "../App.css"
 
 const Navbar = () => {
   return (
-    <div>
       <div className='nav'>
         <div>Home</div>
         <div>About</div>
@@ -12,8 +11,6 @@ const Navbar = () => {
         <div>Skills</div>
 
       </div>
-      
-    </div>
   )
 }
 
