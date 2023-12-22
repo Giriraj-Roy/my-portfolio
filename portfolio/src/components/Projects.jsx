@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
+import '../App.css';
 import axios from "axios";
 
 const dummyProject = {
@@ -66,9 +67,9 @@ const Projects = ({
     <div>
 
           {/* <Jumbotron fluid id="projects" className=""> */}
-            <Container className="">
+            <Container className="project-head">
               <h2 className="">{heading}</h2>
-              <Row>
+              <Row className="project-row">
                 {projectsArray.length 
                   ? projectsArray.map((project, index) => (
                     <ProjectCard
