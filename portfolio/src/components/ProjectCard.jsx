@@ -14,11 +14,10 @@ const ProjectCard = ({ value }) => {
     pushed_at,
   } = value;
   return (
-    <Col md={6}>
-      <Card className="">
+      <Card className="project-card">
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
-          <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
+          {/* <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text> */}
           {svn_url ? <CardButtons svn_url={svn_url} /> : <Skeleton count={2} />}
           <hr />
           {languages_url ? (
@@ -33,21 +32,20 @@ const ProjectCard = ({ value }) => {
           )}
         </Card.Body>
       </Card>
-    </Col>
   );
 };
 
 const CardButtons = ({ svn_url }) => {
   return (
-    <div className="">
+    <div className="project-card-cta">
       <a
         href={`${svn_url}/archive/master.zip`}
-        className=""
+        className="project-card-cta"
       >
-        <i className="" /> Clone Project
+        <i className="project-card-cta" /> Clone Project
       </a>
-      <a href={svn_url} target=" _blank" className="">
-        <i className="" /> Repo
+      <a href={svn_url} target=" _blank" className="project-card-cta">
+        <i className="project-card-cta" /> Repo
       </a>
     </div>
   );
@@ -81,18 +79,18 @@ const Language = ({ languages_url, repo_url }) => {
       Languages:{" "}
       {array.length
         ? array.map((language) => (
-          <a
-            key={language}
-            className="card-link"
-            href={repo_url + `/search?l=${language}`}
-            target=" _blank"
-            rel="noopener noreferrer"
-          >
+          // <a
+          //   key={language}
+          //   className="card-link"
+          //   href={repo_url + `/search?l=${language}`}
+          //   target=" _blank"
+          //   rel="noopener noreferrer"
+          // >
             <span className="">
               {language}:{" "}
               {Math.trunc((data[language] / total_count) * 1000) / 10} %
             </span>
-          </a>
+          // </a>
 
         ))
         : "--"}
